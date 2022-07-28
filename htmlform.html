@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#">
+      <!-- User Name :
+      <input type="text" name="username" value="Shivam" readonly "/><br /><br />
+      Email :
+      <input
+        type="email"
+        name="email"
+        autofocus
+        required
+        size="30"
+      /><br /><br />
+      <input type="number" size="50" min="10" max="20" /><br /><br />
+      <input type="text" size="30" minlength="2" maxlength="10" /><br /><br /> -->
+      User Name : <input type="text" pattern="[a-z]" title="Enter lowercase alphabet"/><br><br>
+      User Name : <input type="text" pattern="[A-Z][a-z]" title="Enter lowercase & Uppercase  alphabet"/><br><br>
+      User Name : <input type="text" pattern="[a-z]{5}"/><br><br>
+      Phone No : <input type="tel" pattern="[0-9]{10}" /><br><br>
+      <input type="submit" /><br><br>
+      <p title="I'm para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, praesentium!</p>
+    </form>
+  </body>
+</html>

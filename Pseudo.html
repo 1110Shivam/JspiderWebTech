@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selector</title>
+    <style>
+        a:link{
+            color:yellow
+        }
+        a:active{
+            color: aquamarine;
+        }
+        a:visited{
+            color: tomato;
+        }
+        .container:hover{
+            color: #fdc133;
+            cursor: pointer;
+            text-decoration: none;
+            background-color: rgb(21, 21, 21);
+            font-size: 1rem;
+            /* opacity: 0; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /* span:nth-of-type(2){
+            background: #fdc133;
+            color:black
+        }
+        p:nth-of-type(odd){
+            color: #fdc133;
+            background-color:black
+        } */
+        .child :nth-child(even){
+            background: #000;
+            color: #fff;
+        }
+        p::first-letter{
+            color: blueviolet;
+            font-size: 3rem;
+        }
+        div::first-line{
+            color: rgb(224, 83, 18);
+            background: #f5f2d7;
+        }
+        div::selection{
+            background: #d78242;
+        }
+        li::marker{
+            content: "😊";
+        }
+        li:nth-child(even)::marker{
+            content: "👌";
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com">Google</a><br><br>
+    <a href="https://www.youtube.com">youtube</a><br><br>
+    <a href="https://www.myntra.com">Myntra</a><br><br>
+    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate <br> blanditiis earum molestiae quisquam vero ducimus <br> voluptate, dignissimos asperiores aspernatur, ad <br> voluptates nemo incidunt, quasi possimus dolorem? Voluptates <br> dolore neque delectus, magnam explicabo dolores?</div>
+    <div>
+        <p>first type of p</p>
+        <span>first type of span</span>
+        <p>second type of p</p>
+        <p>third type of p</p>
+        <span>second type of span</span>
+        <p>forth type of p</p>
+        <p>fifth type of p</p>
+    </div>
+    <div class="child">
+        <p>first type of p</p>
+        <span>first type of span</span>
+        <p>second type of p</p>
+        <p>third type of p</p>
+        <span>second type of span</span>
+        <p>forth type of p</p>
+        <p>fifth type of p</p>
+    </div>
+    <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+        <li>list 5</li>
+    </ul>
+</body>
+</html>
